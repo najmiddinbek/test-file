@@ -48,7 +48,9 @@ const App = () => {
             }
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, []);
 
     const [usersAddedByDate, setUsersAddedByDate] = useState({});
@@ -64,7 +66,9 @@ const App = () => {
             setUsersAddedByDate(usersGroupedByDate);
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, [filteredMavzula]);
 
     const [percentageIncreaseByDate, setPercentageIncreaseByDate] = useState({});
@@ -111,7 +115,9 @@ const App = () => {
             setCountSababli(sababliCount);
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, []);
 
     const [countNotSababli, setCountNotSababli] = useState(0);
@@ -133,7 +139,9 @@ const App = () => {
             setCountNotSababli(notSababliCount);
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, []);
 
     const [percentageSababli, setPercentageSababli] = useState(0);
@@ -162,7 +170,9 @@ const App = () => {
             setPercentageNotSababli(notSababliPercentage.toFixed(2));
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, []);
 
 
@@ -214,7 +224,9 @@ const App = () => {
             });
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, [filteredMavzula]);
 
 

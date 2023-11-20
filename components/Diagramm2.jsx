@@ -125,7 +125,9 @@ const App = () => {
             }
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, [filteredMavzula]);
 
 
@@ -173,7 +175,9 @@ const App = () => {
             setCountSababli(sababliCount);
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, []);
 
     const [countNotSababli, setCountNotSababli] = useState(0);
@@ -195,7 +199,9 @@ const App = () => {
             setCountNotSababli(notSababliCount);
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, []);
 
     const [percentageSababli, setPercentageSababli] = useState(0);
@@ -224,7 +230,9 @@ const App = () => {
             setPercentageNotSababli(notSababliPercentage.toFixed(2));
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, []);
 
 
@@ -264,7 +272,9 @@ const App = () => {
             });
         };
 
-        fetchData();
+        useEffect(() => {
+            fetchData();
+        }, []);
     }, [filteredMavzula, usersAddedByDate]);
 
 
