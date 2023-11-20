@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    position: relative;
+}
+
+.poppins {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #293273;
+}
+
+.some-black {
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.poppins-2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.green {
+    background: rgb(1, 152, 121);
+}
+
+.text-green {
+    color: rgb(1, 152, 152);
+}
+
+.border-green {
+    color: rgb(42, 157, 157)
+}
+
+.gray {
+    background: rgba(243, 243, 243, 0.381);
+    border-top: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    border-left: none;
+    border-right: none;
+    color: rgb(1, 152, 121);
+    font-weight: 700;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .container {
+        padding: 5px 15px;
+    }
+
+    .asosiy_button {
+        text-align: end;
+    }
+
+    .main_panel {
+        display: block;
+        text-align: end;
+    }
+
+    .anons {
+        display: flex;
+        align-items: center;
+    }
+
+    .anons img {
+        width: 40px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .login_section {
+        display: block;
+    }
+
+    .login_section_left {
+        border-right: none;
+        width: 100%;
+    }
+
+    .login_image {
+        margin-left: 0;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .login_text {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .login_form {
+        width: 100%;
+    }
+
+    .page_text {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .admin_panel_main_div {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .admin_panel_text {
+        font-size: 17px;
+    }
+
+    .main_div_edi h1 {
+        font-size: 14px;
+    }
+
+    .simple_button {
+        padding: 10px 8px;
+        margin: 10px 0;
+    }
+
+
+    .katta_main_div_edi {
+        display: block;
+        width: 100%;
+    }
+
+    .tugmachalar {
+        display: flex;
+        gap: 10px;
+    }
+
+    .main_div_edi div {
+        width: 50%;
+        padding: 5px 0;
+    }
+
+    .admin_panel-tih {
+        display: none;
+    }
+
+    .admin_panel_th {
+        padding: 0 50px;
+    }
+
+    .admin_main_page_some_padding {
+        padding: 0 10px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .main_form_add {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .container {
+        padding: 7px 10px;
+    }
+
+    .main_form_add {
+        margin-top: 200px;
+    }
+
+    .admin_panel_text {
+        font-size: 25px;
+        width: 90%;
+        margin: 0;
+    }
+
+    .main_div_edi {
+        gap: 10px;
+    }
+
+    .main_div_edi div {
+        width: 50px;
+    }
+
+    .simple_button {
+        padding: 6px 7px;
+    }
+
+    .tugmachalar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .admin_main_page_some_padding {
+        padding: 0 15px;
+    }
+
+    .page_text {
+        text-align: center;
+    }
+
+    .login_section_left {
+        border-right: none;
+        width: 100%;
+    }
+
+    .login_image {
+        margin-left: 0;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .login_text {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .login_form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+    .login_text {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .login_image {
+        width: 90%;
+        margin-right: 0px;
+    }
+
+    .admin_panel_text {
+        font-size: 25px;
+        width: 90%;
+        margin: 0;
+    }
+
+    .main_div_edi {
+        gap: 10px;
+    }
+
+    .main_div_edi div {
+        width: 50px;
+    }
+
+    .simple_button {
+        padding: 6px 7px;
+    }
+
+    .tugmachalar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main_form_add {
+        margin-top: 50px;
+    }
+}
