@@ -91,19 +91,15 @@ const App = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const a = await getTopics();
-                const topiclar = a?.topiclar;
+                if (typeof window !== 'undefined') {
+                    const a = await getTopics();
+                    const topiclar = a?.topiclar;
 
-                if (!topiclar) {
-                    console.error('Topiclar is undefined.');
-                    return;
+                    const filteredTopics = topiclar?.filter((t) => t.MFY === '2-sektor') ?? [];
+
+                    setTopiclar(filteredTopics);
+                    setFilteredMavzula(filteredTopics);
                 }
-
-                const filteredTopics = topiclar?.filter((t) => t.MFY === '2-sektor') ?? [];
-
-
-                setTopiclar(filteredTopics);
-                setFilteredMavzula(filteredTopics);
 
                 const usersGroupedByDate = filteredTopics.reduce((acc, t) => {
                     const dateKey = new Date(t.createdAt).toLocaleDateString();

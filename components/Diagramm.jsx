@@ -141,14 +141,15 @@ const App = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const a = await getTopics();
-            const topiclar = a?.topiclar;
+            if (typeof window !== 'undefined') {
+                const a = await getTopics();
+                const topiclar = a?.topiclar;
 
-            const filteredTopics = topiclar?.filter((t) => t.MFY === '2-sektor') ?? [];
+                const filteredTopics = topiclar?.filter((t) => t.MFY === '2-sektor') ?? [];
 
-
-            setTopiclar(filteredTopics);
-            setFilteredMavzula(filteredTopics);
+                setTopiclar(filteredTopics);
+                setFilteredMavzula(filteredTopics);
+            }
 
             // Calculate percentage of items where newDarsQoldirish === "Sababli"
             const sababliCount = filteredTopics.filter((t) => t.newDarsQoldirish === "Sababli").length;
